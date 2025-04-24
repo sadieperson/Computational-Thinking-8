@@ -1,4 +1,4 @@
-# Beginning: create varibles 
+# Beginning: create variable
 winter_points = 0 
 summer_points = 0 
 

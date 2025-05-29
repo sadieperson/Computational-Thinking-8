@@ -30,21 +30,39 @@ set_background ("Maze")
 # TODO - set the starting value for your variable
 
 # Section 3: Controls
-window.onleypress (action, "Up")
-window.onkeypress (action, "Down")
-window.onkeypress (action, "Left")
-window.onkeypress (action. "Right")
+def move_up ():
+	s1. setheading (90)
+	s1. forward (10)
+window.onkeypress (move_up, "Up")
+def move_down ():
+	s1. setheading (270)
+	s1. forward (10)
+window.onkeypress (move_down, "Down")
+def move_left ():
+	s1.setheading (180)
+	s1. forward (10)
+window.onkeypress (move_left, "Left")
+def move_left ():
+	s1. setheading (180)
+	s1. forward (10)
+
+def move_right ():
+	s1.setheading (0)
+	s1. forward (10)
+window.onkeypress (move_right, "Right")
 # TODO - pick keys for each control
 
 # Section 4: Game Loop
 window.listen()
-timer = 0
+timer = 60 
 while True:
 	time.sleep(0.1)
-	timer += 1  
+	timer -= 1  
 	 
     
  	# TODO - code for automatic actions
+	 
+	 
 
 
 
@@ -53,8 +71,11 @@ while True:
 
 	window.update()
 
-	# if :
+	# if : goes over time say you lose
 	# 	break
+	if timer >600: 
+		print ("Game Over")
+	
 	
 
 print("Game Over")

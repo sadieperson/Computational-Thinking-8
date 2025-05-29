@@ -16,11 +16,11 @@ t = turtle.Turtle()
 t.setheading( direction )
 
 # Moving
-t.goto( x , y )
-t.forward( distance )
-t.left( angle )
-t.right( angle )
-t.speed( speed )
+t.goto( -300 , 25 )
+t.forward( 10 )
+t.left( 45 )
+t.right( 90 )
+t.speed( 10 )
 
 # Drawing
 t.penup()
